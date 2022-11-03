@@ -1,7 +1,7 @@
 {
     "redirects": [
         {
-            "source": /whatsapp", 
+            "source": "/whatsapp", 
             "destination": "/local-images/rickroll-roll.gif"
         }
     ]
