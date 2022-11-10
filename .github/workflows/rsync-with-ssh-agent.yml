@@ -38,8 +38,8 @@ jobs:
           Here
       - name: Show config
         run: cat ~/.ssh/config
-      - name: Test rsync
-        run: rsync --exclude '.*' --recursive --delete-excluded --verbose --dry-run . 'remote:'
+      - name: Transfer files
+        run: rsync --exclude '.*' --recursive --delete-excluded --verbose . 'remote:'
       - name: Kill agent
         run: |
           source /tmp/agent.env
