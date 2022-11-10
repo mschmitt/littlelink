@@ -10,8 +10,6 @@ on:
 jobs:
   rsync_with_ssh_agent:
     runs-on: ubuntu-22.04
-    env:
-      SSH_AUTH_SOCK: /tmp/agent.socket
     steps:
       - uses: actions/checkout@v3
       - name: Install packages
@@ -21,11 +19,7 @@ jobs:
       - name: Save SSH id to file
         run: install -D -m 600 <(echo "${{ secrets.SSH_KEY }}") ~/.ssh/id
       - name: Start agent
-        run: ssh-agent -a $SSH_AUTH_SOCK > /tmp/agent.env
-      - name: Add identity
-        run: echo "${{ secrets.SSH_PASSPHRASE }}" | ssh-add ~/.ssh/id
-      - name: List identities
-        run:  ssh-add -l
+        run: ssh-agent -a ~/.ssh/agent.socket > ~/.ssh/agent.env
       - name: Create ssh config
         run: |
           cat > ~/.ssh/config <<-Here
@@ -36,11 +30,20 @@ jobs:
           Host remote
           Hostname ${{ secrets.SSH_HOST }}
           Here
-      - name: Show config
-        run: cat ~/.ssh/config
-      - name: Transfer files
-        run: rsync --exclude '.*' --recursive --delete-excluded --verbose . 'remote:'
-      - name: Kill agent
+      - name: Add identity
         run: |
-          source /tmp/agent.env
+          source ~/.ssh/agent.env
+          echo "${{ secrets.SSH_PASSPHRASE }}" | ssh-add ~/.ssh/id
+      - name: List identities
+        run:  |
+          source ~/.ssh/agent.env
+          ssh-add -l
+      - name: Transfer files
+        run: |
+          source ~/.ssh/agent.env
+          rsync --exclude '.*' --recursive --delete-excluded --verbose . 'remote:'
+      - name: Kill agent
+        if: success() || failure()
+        run: |
+          source ~/.ssh/agent.env
           ssh-agent -k
