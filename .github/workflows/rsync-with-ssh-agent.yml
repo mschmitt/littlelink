@@ -2,9 +2,9 @@ name: rsync with SSH agent
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "persona/informal" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "persona/informal" ]
   workflow_dispatch:
 
 jobs:
