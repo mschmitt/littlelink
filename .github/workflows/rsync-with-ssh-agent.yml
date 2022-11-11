@@ -8,42 +8,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  rsync_with_ssh_agent:
+  upload_files:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - name: Install packages
-        run: |
-          sudo apt-get update
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y openssh-client rsync
-      - name: Save SSH id to file
-        run: install -D -m 600 <(echo "${{ secrets.SSH_KEY }}") ~/.ssh/id
-      - name: Start agent
-        run: ssh-agent -a ~/.ssh/agent.socket > ~/.ssh/agent.env
-      - name: Create ssh config
-        run: |
-          cat > ~/.ssh/config <<-Here
-          StrictHostKeyChecking accept-new
-          IdentityFile ~/.ssh/id
-          IdentitiesOnly yes
-          User ${{ secrets.SSH_USER }}
-          Host remote
-          Hostname ${{ secrets.SSH_HOST }}
-          Here
-      - name: Add identity
-        run: |
-          source ~/.ssh/agent.env
-          echo "${{ secrets.SSH_PASSPHRASE }}" | ssh-add ~/.ssh/id
-      - name: List identities
-        run:  |
-          source ~/.ssh/agent.env
-          ssh-add -l
-      - name: Transfer files
-        run: |
-          source ~/.ssh/agent.env
-          rsync --exclude '.*' --recursive --delete-excluded --verbose . 'remote:'
-      - name: Kill agent
-        if: success() || failure()
-        run: |
-          source ~/.ssh/agent.env
-          ssh-agent -k
+      - uses: mschmitt/rsync-with-ssh-agent@HEAD
+        with:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          RSYNC_OPTIONS: ''
