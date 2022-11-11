@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule whatsapp local-images/rickroll-roll.gif
+RewriteRule ^whatsapp$ local-images/rickroll-roll.gif
