@@ -18,4 +18,5 @@ jobs:
           SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
+          RSYNC_LOCAL_PATH: 'site'
           RSYNC_OPTIONS: '--include=.htaccess'
