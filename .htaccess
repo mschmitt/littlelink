@@ -1,1 +1,2 @@
-RedirectMatch whatsapp local-images/rickroll-roll.gif
+RewriteEngine On
+RewriteRule whatsapp local-images/rickroll-roll.gif
