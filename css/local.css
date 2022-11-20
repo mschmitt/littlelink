@@ -17,5 +17,6 @@ a.button.button-github img {
 	filter: invert(100%);
 }
 a.button.button-local-location {
-	background: deepskyblue; color: black;
+	background: deepskyblue; 
+	color: black;
 }
