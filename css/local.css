@@ -1,0 +1,21 @@
+a.button.button-twit {
+	background: white;
+	color: black;
+	border: 2px solid black;
+	box-sizing: border-box;
+}
+a.button.button-twit img {
+	filter: invert(100%);
+}
+a.button.button-github {
+	background-image: url('../local-images/random-fantasy-backdrop.jpg');
+	color: black;
+	border: 1px solid peachpuff;
+	box-sizing: border-box;
+}
+a.button.button-github img {
+	filter: invert(100%);
+}
+a.button.button-local-location {
+	background: deepskyblue; color: black;
+}
