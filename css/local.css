@@ -1,8 +1,24 @@
+body {
+	background: gainsboro;
+}
+h1 {
+	line-height: 56px;
+}
+p {
+	margin-bottom: 1.5rem;
+}
+.column {
+	margin-top: 5% !important;
+}
+.button {
+	margin-bottom: 0.5rem;
+}
 a.button.button-twit {
 	background: white;
 	color: black;
-	border: 2px solid black;
+	border: 5px solid black;
 	box-sizing: border-box;
+	line-height: 40px;
 }
 a.button.button-twit img {
 	filter: invert(100%);
