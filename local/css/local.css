@@ -1,5 +1,5 @@
 body {
-	background-image: url('../local/images/20220729_132019_IMG_3465.dxo.jpg');
+	background-image: url('../images/20220729_132019_IMG_3465.dxo.jpg');
 	background-size: cover;
 }
 h1 {
@@ -30,7 +30,7 @@ a.button.button-twit img {
 	filter: invert(100%);
 }
 a.button.button-github {
-	background-image: url('../local/images/random-fantasy-backdrop.jpg');
+	background-image: url('../images/random-fantasy-backdrop.jpg');
 	color: black;
 	border: 1px solid peachpuff;
 	box-sizing: border-box;
@@ -39,7 +39,7 @@ a.button.button-github img {
 	filter: invert(100%);
 }
 a.button.button-local-location {
-	background-image: url('../local/images/matchbox-rug.jpg');
+	background-image: url('../images/matchbox-rug.jpg');
 	color: black;
 	border: 1px solid #8df4ff;
 	box-sizing: border-box;
