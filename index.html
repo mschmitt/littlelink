@@ -3,13 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Linkdings</title>
+  <title>Martin Schmitt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton-light.css">
   <link rel="stylesheet" href="css/brands.css">
   <link rel="icon" type="image/png" href="images/avatar.png">
   <link rel="stylesheet" href="local/css/local.css">
+  <link rel="stylesheet" href="local/js/jquery-ui-1.13.2/jquery-ui.min.css">
+  <script type="text/javascript" src="local/js/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="local/js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="local/js/local.js"></script>
 </head>
 
 <body>
@@ -18,44 +22,56 @@
       <div class="column" style="margin-top: 10%">
 
         <!-- Title -->
-        <h1>Linkdings</h1>
+        <h1>Martin Schmitt</h1>
 
         <!-- Short Bio -->
-        <p><em>"Wir sind in diesem Laden hier<br/>doch nur die Unixtippsen!"</em><br/> (1999)</p>
+        <p>I work in international IT projects.</p> 
 
-	<!-- Mastodon -->
-	<a class="button button-mastodon" href="https://mastodon.online/@unixtippse" target="_blank" rel="noopener me">
-	    <img class="icon" src="images/icons/mastodon.svg" alt="Mastodon Logo">Masto</a>
-	<br>
-
-        <!-- Twitter -->
-        <a class="button button-twit" href="https://twitter.com/unixtippse" target="_blank" rel="noopener">
-            <img class="icon" src="images/icons/twitter.svg" alt="Twitter Logo">Twitter</a>
+	<!-- Company Homepage -->
+        <a class="button button-web button-scsy" href="https://scsy.de" target="_blank" rel="noopener">
+            <img class="icon" src="images/icons/web.svg" alt="Web Logo">Schmitt Systems</a>
         <br>
 
-        <!-- Instagram -->
-        <a class="button button-instagram" href="https://instagram.com/mrtnschmtt" target="_blank" rel="noopener">
-            <img class="icon" src="images/icons/instagram.svg" alt="Instagram Logo">Insta</a>
+	<!-- CV -->
+        <a class="button button-web button-cv" href="https://scsy.de" target="_blank" rel="noopener">
+            <img class="icon" src="images/icons/web.svg" alt="Web Logo">CV</a>
+        <br>
+	<div class="dialog-container">
+		<div id="cv-dialog" title="Note">
+			<span class="ui-icon ui-icon-lightbulb" style="float:left; margin:0 7px 50px 0;"></span>
+			<p>Available on personal request. The CV is kept private.</p>
+		</div>
+	</div>
+
+        <!-- Xing -->
+        <a class="button button-xing" href="https://www.xing.com/profile/Martin_Schmitt/" target="_blank" rel="noopener">
+            <img class="icon" src="images/icons/xing.svg" alt="xing Logo">Xing</a>
+        <br>
+
+	<!-- Gulp -->
+        <a class="button button-gulp" href="https://gulp.de" target="_blank" rel="noopener">
+            <img class="icon" src="local/images/gulp-icon.webp" alt="Gulp Logo">Gulp</a>
+        <br>
+	<div class="dialog-container">
+		<div id="gulp-dialog" title="Note">
+			<span class="ui-icon ui-icon-lightbulb" style="float:left; margin:0 7px 50px 0;"></span>
+			<p>Gulp profile ID <strong>1080</strong>. The profile is kept private.</p>
+		</div>
+	</div>
+
+        <!-- GitHub -->
+        <a class="button button-github" href="https://github.com/mschmitt" target="_blank" rel="noopener">
+            <img class="icon" src="images/icons/github.svg" alt="GitHub Logo">Github</a>
         <br>
 
         <!-- Wordpress -->
         <a class="button button-wordpress" href="https://binblog.de" target="_blank" rel="noopener">
-            <img class="icon" src="images/icons/wordpress.svg" alt="Wordpress Logo">Tech blog: binblog.de</a>
+            <img class="icon" src="images/icons/wordpress.svg" alt="Wordpress Logo">binblog.de</a>
         <br>
 
-        <!-- Wordpress -->
-        <a class="button button-wordpress" href="https://beliebiges.de" target="_blank" rel="noopener">
-            <img class="icon" src="images/icons/wordpress.svg" alt="Wordpress Logo">Travel blog: beliebiges.de</a>
-        <br>
-
-        <!-- GitHub -->
-        <a class="button button-github" href="https://github.com/mschmitt" target="_blank" rel="noopener">
-            <img class="icon" src="images/icons/github.svg" alt="GitHub Logo">git pfusch</a>
-        <br>
-
-	<!-- WhatsApp -->
-	<a class="button button-whatsapp" href="whatsapp" target="_blank" rel="noopener">
-	    <img class="icon" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">What's App</a>
+	<!-- Mastodon -->
+	<a class="button button-mastodon" href="https://mastodon.online/@unixtippse" target="_blank" rel="noopener me">
+	    <img class="icon" src="images/icons/mastodon.svg" alt="Mastodon Logo">Mastodon</a>
 	<br>
 
         <!-- Threema -->
@@ -63,12 +79,8 @@
             <img class="icon" src="images/icons/threema.svg" alt="Threema Logo">Threema</a>
         <br>
 
-        <!-- Location -->
-        <a class="button button-local-location" href="https://www.openstreetmap.org/#map=11/50.5398/8.7348" target="_blank" rel="noopener">
-            <img class="icon" src="local/images/openclipart-geo-200221.svg" alt="Globe">Location</a>
-        <br>
-
-        <p>Build your own Linkdings by forking <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>.</p>
+        <!-- Footer -->
+        <p><a href="https://scsy.de/impressum.html">Imprint</a> &mdash; Fork <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a> on Github.</p>
       </div>
     </div>
   </div>

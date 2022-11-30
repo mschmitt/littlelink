@@ -1,6 +1,7 @@
 body {
-	background-image: url('../images/20220729_132019_IMG_3465.dxo.jpg');
+	#background-image: url('../images/20220729_132019_IMG_3465.dxo.jpg');
 	background-size: cover;
+	background-color: silver;
 }
 h1 {
 	line-height: 56px;
@@ -11,51 +12,23 @@ p {
 .column {
 	margin-top: 5% !important;
 }
-.row {
-	background: rgba(250, 250, 250, 0.7);
-	border-radius: 100px;
-	box-shadow: 0px 0px 75px 75px rgba(255, 255, 255, 0.7);
-}
 .button {
 	margin-bottom: 0.5rem;
 }
-a.button.button-twit {
+a.button.button-scsy {
+	background: red;
+}
+a.button.button-cv {
+	background: purple;
+}
+a.button.button-gulp {
 	background: white;
-	color: black;
-	border: 5px solid black;
-	box-sizing: border-box;
-	line-height: 38px;
+	color: #981917;
 }
-a.button.button-twit img {
-	filter: invert(100%);
+.button.button-gulp:hover,
+.button.button-gulp:focus {
+  filter: brightness(90%);
 }
-a.button.button-github {
-	background-image: url('../images/random-fantasy-backdrop.jpg');
-	color: black;
-	border: 1px solid peachpuff;
-	box-sizing: border-box;
-}
-a.button.button-github img {
-	filter: invert(100%);
-}
-a.button.button-local-location {
-	background-image: url('../images/matchbox-rug.jpg');
-	color: black;
-	border: 1px solid #8df4ff;
-	box-sizing: border-box;
-}
-a.button.button-wordpress {
-	background-image: linear-gradient(45deg, green, black);
-}
-a.button.button-wordpress  ~ a.button.button-wordpress {
-	background-image: linear-gradient(10deg, blue, green);
-}
-a.button.button-threema {
-	background-image: linear-gradient(110deg, black, green, #3fe669, #3fe669, green, black);
-}
-a.button.button-mastodon {
-	background-image: linear-gradient(80deg, #6262fd, #17063B, #17063B, #6262fd);
-}
-a.button.button-whatsapp {
-	background: linear-gradient(24deg, #455a64, #46798e);
+.dialog-container {
+	display: none;
 }
