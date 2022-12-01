@@ -17,7 +17,6 @@ p {
 }
 a,a:visited {
 	color: maroon;
-	text-decoration: none;
 }
 a.button.button-scsy {
 	background: red;
