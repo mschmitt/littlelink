@@ -1,7 +1,7 @@
 body {
-	#background-image: url('../images/20220729_132019_IMG_3465.dxo.jpg');
+	background-image: url('../images/wallpaper-trollstigen-2022.jpg');
 	background-size: cover;
-	background-color: silver;
+	#background-color: silver;
 }
 h1 {
 	line-height: 56px;
@@ -14,6 +14,10 @@ p {
 }
 .button {
 	margin-bottom: 1.0rem;
+}
+a,a:visited {
+	color: maroon;
+	text-decoration: none;
 }
 a.button.button-scsy {
 	background: red;
