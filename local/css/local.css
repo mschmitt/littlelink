@@ -13,7 +13,7 @@ p {
 	margin-top: 5% !important;
 }
 .button {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.0rem;
 }
 a.button.button-scsy {
 	background: red;
@@ -24,6 +24,10 @@ a.button.button-cv {
 a.button.button-gulp {
 	background: white;
 	color: #981917;
+}
+a.button.button-phone {
+	background: #f48fff;
+	color: black;
 }
 .button.button-gulp:hover,
 .button.button-gulp:focus {
