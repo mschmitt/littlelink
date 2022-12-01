@@ -18,4 +18,4 @@ jobs:
           SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE2 }}
           SSH_USER: ${{ secrets.SSH_USER2 }}
           SSH_HOST: ${{ secrets.SSH_HOST2 }}
-          RSYNC_OPTIONS: '--exclude ".*" --recursive --delete --verbose --dry-run'
+          RSYNC_OPTIONS: '--exclude ".*" --recursive --delete --verbose'
