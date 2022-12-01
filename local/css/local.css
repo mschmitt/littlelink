@@ -1,7 +1,6 @@
 body {
 	background-image: url('../images/wallpaper-trollstigen-2022.jpg');
 	background-size: cover;
-	#background-color: silver;
 }
 h1 {
 	line-height: 56px;
@@ -14,6 +13,10 @@ p {
 }
 .button {
 	margin-bottom: 1.0rem;
+}
+.lock {
+	font-size: xx-small;
+	vertical-align: super;
 }
 a,a:visited {
 	color: maroon;
@@ -30,6 +33,10 @@ a.button.button-gulp {
 }
 a.button.button-phone {
 	background: #f48fff;
+	color: black;
+}
+a.button.button-mail {
+	background: gold;
 	color: black;
 }
 .button.button-gulp:hover,

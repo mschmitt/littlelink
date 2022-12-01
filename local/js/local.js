@@ -1,10 +1,15 @@
 $(document).ready(function(){
+	$('#jshint').css('display', 'none');
+	$('#mail').text(atob('bWFzQHNjc3kuZGU='));
+	$('.button-mail').attr('href', atob('bWFpbHRvOm1hc0BzY3N5LmRlCg=='));
+	$('#phone').text(atob('KzQ5LTE3MS03NDEyNDE0'));
+	$('.button-phone').attr('href', atob('dGVsOjQ5LTE3MS03NDEyNDE0'));
 	$('#gulp-dialog').dialog({
 		autoOpen: false,
 		modal: true,
 		width: 400,
 		buttons: { 
-			"Got it!": function() { 
+			"OK": function() { 
 				$(this).dialog("close") 
 			}
 		}
@@ -14,7 +19,7 @@ $(document).ready(function(){
 		modal: true,
 		width: 400,
 		buttons: { 
-			"Got it!": function() { 
+			"OK": function() { 
 				$(this).dialog("close") 
 			}
 		}
