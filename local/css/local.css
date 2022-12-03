@@ -43,6 +43,14 @@ a.button.button-mail {
 .button.button-gulp:focus {
   filter: brightness(90%);
 }
+.button.button-phone:hover,
+.button.button-phone:focus {
+  filter: brightness(90%);
+}
+.button.button-mail:hover,
+.button.button-mail:focus {
+  filter: brightness(90%);
+}
 .dialog-container {
 	display: none;
 }
