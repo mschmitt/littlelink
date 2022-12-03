@@ -38,11 +38,15 @@ a.button.button-github {
 a.button.button-github img {
 	filter: invert(100%);
 }
-a.button.button-local-location {
+a.button.button-location {
 	background-image: url('../images/matchbox-rug.jpg');
 	color: black;
 	border: 1px solid #8df4ff;
 	box-sizing: border-box;
+}
+.button.button-location:hover,
+.button.button-location:focus {
+  filter: brightness(90%);
 }
 a.button.button-wordpress {
 	background-image: linear-gradient(45deg, green, black);
