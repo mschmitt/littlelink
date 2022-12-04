@@ -39,6 +39,10 @@ a.button.button-mail {
 	background: gold;
 	color: black;
 }
+.button.button-github:hover,
+.button.button-github:focus {
+  filter: invert(10%);
+}
 .button.button-gulp:hover,
 .button.button-gulp:focus {
   filter: brightness(90%);
