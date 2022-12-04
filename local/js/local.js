@@ -2,8 +2,8 @@ $(document).ready(function(){
 	$('#jshint').css('display', 'none');
 	$('#mail').text(atob('bWFzQHNjc3kuZGU='));
 	$('.button-mail').attr('href', atob('bWFpbHRvOm1hc0BzY3N5LmRlCg=='));
-	$('#phone').text(atob('KzQ5LTE3MS03NDEyNDE0'));
-	$('.button-phone').attr('href', atob('dGVsOjQ5LTE3MS03NDEyNDE0'));
+	$('#phone').text(atob('KzQ5LTY0MDMtOTY5MDg3OA=='));
+	$('.button-phone').attr('href', atob('dGVsOjQ5LTY0MDMtOTY5MDg3OA=='));
 	$('#gulp-dialog').dialog({
 		autoOpen: false,
 		modal: true,
