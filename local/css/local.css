@@ -48,6 +48,10 @@ a.button.button-location {
 .button.button-location:focus {
   filter: brightness(90%);
 }
+.button.button-flickr:hover,
+.button.button-flickr:focus {
+  filter: brightness(90%);
+}
 a.button.button-wordpress {
 	background-image: linear-gradient(45deg, green, black);
 }
