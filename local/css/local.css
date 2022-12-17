@@ -67,3 +67,7 @@ a.button.button-steam {
 	background: linear-gradient(30deg, #171a21, #66c0f4, #1b2838);
 	color: white;
 }
+a.button.button-flickr {
+	background: linear-gradient(10deg, blue, red);
+	color: white;
+}
