@@ -71,6 +71,11 @@ a.button.button-mastodon {
 a.button.button-whatsapp {
 	background: linear-gradient(24deg, #455a64, #46798e);
 }
+a.button.button-deltachat {
+	background-color: #159957;
+	background-image: linear-gradient(120deg, #77888f, #364e59);
+	color: white;
+}
 a.button.button-steam {
 	background: linear-gradient(30deg, #171a21, #66c0f4, #1b2838);
 	color: white;
