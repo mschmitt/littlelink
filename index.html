@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="css/brands.css">
   <link rel="icon" type="image/png" href="images/avatar.png">
   <link rel="stylesheet" href="local/css/local.css">
+  <link rel="stylesheet" href="local/js/jquery-ui-1.13.2/jquery-ui.min.css">
+  <script type="text/javascript" src="local/js/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="local/js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="local/js/local.js"></script>
 </head>
 
 <body>
@@ -67,6 +71,11 @@
         <a class="button button-whatsapp" href="whatsapp" target="_blank" rel="noopener">
         	<img class="icon" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">What's App</a>
         <br>
+        <div class="whatsapp-container", style="display: none">
+            <div id="whatsapp-dialog" title="Rickroll'd" style="padding: 0px">
+                <img src="local/images/rickroll-roll.gif" width="400px" alt="Rickrolled"/>
+            </div>
+        </div>
 
         <!-- Threema -->
         <a class="button button-threema" href="https://threema.id/WPV44AE2" target="_blank" rel="noopener">
@@ -77,7 +86,12 @@
         <a class="button button-deltachat" href="local/images/deltachat-qrcode.png" target="_blank" rel="noopener">
             <img class="icon" src="local/images/deltachat-icon.svg" alt="Deltachat Logo">DeltaChat</a>
         <br>
-        
+        <div class="dialog-container", style="display: none">
+            <div id="deltachat-dialog" title="DeltaChat" style="padding: 0px">
+                <img src="local/images/deltachat-qrcode.png" width="400px" alt="QR code"/>
+            </div>
+        </div>
+    
         <!-- Steam -->
         <a class="button button-steam" href="https://steamcommunity.com/id/MitchSTM" target="_blank" rel="noopener">
             <img class="icon" src="images/icons/steam.svg" alt="Steam Logo">Steam</a>
