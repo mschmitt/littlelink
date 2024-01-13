@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('#deltachat-dialog').dialog({
 		autoOpen: false,
 		modal: true,
-		width: 400,
+		width: 300,
 	});
 	$('.button-deltachat').click(function(event){
 		event.preventDefault();
@@ -11,7 +11,7 @@ $(document).ready(function(){
 	$('#whatsapp-dialog').dialog({
 		autoOpen: false,
 		modal: true,
-		width: 400,
+		width: 300,
 	});
 	$('.button-whatsapp').click(function(event){
 		event.preventDefault();
