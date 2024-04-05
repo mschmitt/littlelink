@@ -1,6 +1,7 @@
-body {
-	background-image: url('../images/collage.jpg');
-	background-size: cover;
+html {
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/collage.jpg');
+	background-size: auto 100vh;
+	color: white;
 }
 h1 {
 	line-height: 56px;
@@ -19,7 +20,7 @@ p {
 	vertical-align: super;
 }
 a,a:visited {
-	color: maroon;
+	color: yellow;
 }
 a.button.button-threema {
 	background-image: linear-gradient(110deg, black, green, #3fe669, #3fe669, green, black);
