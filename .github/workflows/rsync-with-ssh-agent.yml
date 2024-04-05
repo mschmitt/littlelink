@@ -2,9 +2,9 @@ name: rsync with SSH agent
 
 on:
   push:
-    branches: [ "persona/professional" ]
+    branches: [ "persona/gaming" ]
   pull_request:
-    branches: [ "persona/professional" ]
+    branches: [ "persona/gaming" ]
   workflow_dispatch:
 
 jobs:
@@ -14,8 +14,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: mschmitt/rsync-with-ssh-agent@v2
         with:
-          SSH_KEY: ${{ secrets.SSH_KEY2 }}
-          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE2 }}
-          SSH_USER: ${{ secrets.SSH_USER2 }}
-          SSH_HOST: ${{ secrets.SSH_HOST2 }}
+          SSH_KEY: ${{ secrets.SSH_KEY3 }}
+          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE3 }}
+          SSH_USER: ${{ secrets.SSH_USER3 }}
+          SSH_HOST: ${{ secrets.SSH_HOST3 }}
           RSYNC_OPTIONS: '--exclude ".*" --recursive --delete --verbose'
