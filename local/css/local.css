@@ -21,40 +21,13 @@ p {
 a,a:visited {
 	color: maroon;
 }
-a.button.button-scsy {
-	background: red;
+a.button.button-threema {
+	background-image: linear-gradient(110deg, black, green, #3fe669, #3fe669, green, black);
 }
-a.button.button-cv {
-	background: purple;
+a.button.button-mastodon {
+	background-image: linear-gradient(80deg, #6262fd, #17063B, #17063B, #6262fd);
 }
-a.button.button-gulp {
-	background: white;
-	color: #981917;
-}
-a.button.button-phone {
-	background: #f48fff;
-	color: black;
-}
-a.button.button-mail {
-	background: gold;
-	color: black;
-}
-.button.button-github:hover,
-.button.button-github:focus {
-  filter: invert(10%);
-}
-.button.button-gulp:hover,
-.button.button-gulp:focus {
-  filter: brightness(90%);
-}
-.button.button-phone:hover,
-.button.button-phone:focus {
-  filter: brightness(90%);
-}
-.button.button-mail:hover,
-.button.button-mail:focus {
-  filter: brightness(90%);
-}
-.dialog-container {
-	display: none;
+a.button.button-steam {
+	background: linear-gradient(30deg, #171a21, #66c0f4, #1b2838);
+	color: white;
 }
