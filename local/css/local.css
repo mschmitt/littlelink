@@ -28,8 +28,9 @@ p {
 	font-weight: bold;
 	font-size: larger;
 }
-.footer-quote {
-	font-size: small;
+.quote {
+	font-size: smaller;
+	font-weight: bold;
 	line-height: 1.5em;
 	width: 300px;
 	display: inline-block;
@@ -42,7 +43,7 @@ p {
 	text-align: right;
 	margin-bottom: 0.5em;
 }
-.button {
+.button, .quote {
 	margin-bottom: 1.0rem;
 }
 .lock {
