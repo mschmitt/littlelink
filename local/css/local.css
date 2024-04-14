@@ -8,6 +8,9 @@ h1 {
 p {
 	margin-bottom: 1.5rem;
 }
+.avatar {
+	display: none;
+}
 .column {
 	margin-top: 5% !important;
 }
