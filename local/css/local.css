@@ -74,3 +74,6 @@ a.button.button-mail {
 .button.button-mail:focus {
   filter: brightness(90%);
 }
+#jshint {
+	font-size: xx-small;
+}
