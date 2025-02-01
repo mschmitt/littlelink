@@ -56,24 +56,10 @@ p {
 a,a:visited {
 	color: maroon;
 }
-a.button.button-threema {
-	background-image: linear-gradient(110deg, black, green, #3fe669, #3fe669, green, black);
-}
 a.button.button-mastodon {
 	background-image: linear-gradient(80deg, #6262fd, #17063B, #17063B, #6262fd);
 }
 a.button.button-steam {
 	background: linear-gradient(30deg, #171a21, #66c0f4, #1b2838);
 	color: white;
-}
-a.button.button-mail {
-        background: gold;
-        color: black;
-}
-.button.button-mail:hover,
-.button.button-mail:focus {
-  filter: brightness(90%);
-}
-#jshint {
-	font-size: xx-small;
 }
