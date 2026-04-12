@@ -63,3 +63,10 @@ a.button.button-steam {
 	background: linear-gradient(30deg, #171a21, #66c0f4, #1b2838);
 	color: white;
 }
+a.button.button-mitchpedia {
+	background-image: linear-gradient(160deg, darkgray, white, darkgray);
+	font-family: serif;
+	color: darkslategrey;
+	font-weight: normal;
+	font-style: italic;
+}
